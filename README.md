@@ -1,0 +1,5 @@
+Automation Software for FIRMS
+
+A. Overview
+
+To achieve the automatic measurement of ultrasound force-induced remnant mag- netization spectroscopy (usFIRMS), LabVIEW is used to control the hardwares of instrument such as the lock-in amplifier, function generator, and servo motor. Each component’s function in the instrument is programmed individually to a subVI, and all subVIs are integrated into a LabVIEW project, Sine Generator - R Series.lvproj. The subVI to communicate global variables among all subVIs is Global vab.vi. Each subVI’s name is based on the hardware and function. For example, SR530 read.vi is to read the output of lock-in amplifier, SR530. The hierarchy of subVIs is shown in Figure 7.8. It is to noted that the application programming interface (API) to drive each hardware is not listed. SR830 sweep update tw sonication soft 2.vi is the main code to execute the automatic mea- surement. Each subVI’s function will be explained later and all source codes are in the Appendix A.
